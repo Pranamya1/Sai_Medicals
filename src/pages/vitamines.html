@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vitamins & Supplements | MedZone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../Styles/pages.css" />
+</head>
+
+<body>
+  <div class="container-fluid px-3">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 mb-4">
+      <div class="container-fluid px-0">
+        <a class="navbar-brand fw-bold" href="#">Sai Medicals</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Search Bar -->
+          <form class="d-flex me-auto ms-lg-3 my-2 my-lg-0 w-50">
+            <input class="form-control me-2" type="search" placeholder="Search medicines..." aria-label="Search" />
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+          </form>
+
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="../../index.html">Home</a></li>
+
+            <!-- Categories Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./pain-relief.html">Pain Relief</a></li>
+                <li><a class="dropdown-item" href="./caugh-caugh.html">Cough & Cold</a></li>
+                <li><a class="dropdown-item" href="./vitamines.html">Vitamins</a></li>
+                <li><a class="dropdown-item" href="./personal-care.html">Personal Care</a></li>
+                <li><a class="dropdown-item" href="./child-care.html">Child Care</a></li>
+                <li><a class="dropdown-item" href="./first-ade.html">First Aid</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+
+            <!-- Upload Prescription -->
+            <li class="nav-item">
+              <a class="nav-link text-primary fw-semibold" href="#" data-bs-toggle="modal"
+                data-bs-target="#uploadModal">
+                Upload Prescription
+              </a>
+            </li>
+
+            <!-- Login/Register -->
+            <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+
+            <!--Cart Icon -->
+            <li class="nav-item">
+              <a class="nav-link position-relative" href="#">
+                <i class="bi bi-cart"></i>
+                Cart
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  2
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Vitamins Showcase -->
+    <section id="top-products" class="vitamin-page py-5">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Vitamins & Supplements</h2>
+        <p class="lead text-muted">Boost energy, immunity, and overall wellness with trusted multivitamin formulas.</p>
+      </div>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+        <!-- Product Cards -->
+        <!-- Revital H -->
+        <div class="col">
+          <div class="card product-card h-100 shadow-sm">
+            <img src="https://m.media-amazon.com/images/I/61kuT-rqijL._UF1000,1000_QL80_.jpg"
+              class="card-img-top" alt="Revital H">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title fw-semibold">Revital H</h5>
+              <p class="card-text">Daily multivitamin with ginseng & zinc for energy support.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="fw-bold text-success">₹210 / pack</span>
+                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Supradyn -->
+        <div class="col">
+          <div class="card product-card h-100 shadow-sm">
+            <img src="https://m.media-amazon.com/images/I/614YLUdpc4L._UF1000,1000_QL80_.jpg"
+              class="card-img-top" alt="Supradyn">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title fw-semibold">Supradyn</h5>
+              <p class="card-text">Power-packed vitamins + minerals to support active lifestyles.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="fw-bold text-success">₹90 / strip</span>
+                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shelcal 500 -->
+        <div class="col">
+          <div class="card product-card h-100 shadow-sm">
+            <img src="https://cdn01.pharmeasy.in/dam/products_otc/159115/shelcal-500mg-strip-of-15-tablets-2-1679999355.jpg" class="card-img-top"
+              alt="Shelcal 500">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title fw-semibold">Shelcal 500</h5>
+              <p class="card-text">Calcium + Vitamin D3 for healthy bones and joints.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="fw-bold text-success">₹130 / strip</span>
+                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Neurobion Forte -->
+        <div class="col">
+          <div class="card product-card h-100 shadow-sm">
+            <img src="https://www.emedicalwala.com/wp-content/uploads/2022/05/Neurobion_Forte_Table111.jpg"
+              class="card-img-top" alt="Neurobion Forte">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title fw-semibold">Neurobion Forte</h5>
+              <p class="card-text">B-complex vitamins for nerve health and fatigue relief.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="fw-bold text-success">₹65 / strip</span>
+                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zincovit -->
+        <div class="col">
+          <div class="card product-card h-100 shadow-sm">
+            <img src="https://www.clickoncare.com/cdn/shop/files/1_891ed6f2-4ac0-401d-87d5-b0de81ab32d8.jpg?v=1708080853"
+              class="card-img-top" alt="Zincovit">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title fw-semibold">Zincovit</h5>
+              <p class="card-text">Multivitamin with zinc and grape seed extract for immunity boost.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="fw-bold text-success">₹75 / strip</span>
+                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Becosules Capsules -->
+        <div class="col">
+          <div class="card product-card h-100 shadow-sm">
+            <img src="https://www.netmeds.com/images/product-v1/400x400/22529/becosules_plus_capsule_30s_34135_0_1.webp"
+              class="card-img-top" alt="Becosules">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title fw-semibold">Becosules Capsules</h5>
+              <p class="card-text">Vitamin B-complex and C to support metabolism and immunity.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="fw-bold text-success">₹85 / strip</span>
+                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-4 pb-3 mt-5" id="footer">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <div class="col-12 col-md-4 mb-3">
+            <h5 class="fw-bold">MedZone</h5>
+            <p>Your trusted platform for reliable medicines and wellness essentials.</p>
+          </div>
+          <div class="col-6 col-md-4 mb-3">
+            <h6 class="fw-semibold">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Shop</a></li>
+              <li><a href="#" class="text-white text-decoration-none">About</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 mb-3">
+            <h6 class="fw-semibold">Get in Touch</h6>
+            <p>Email: support@medzone.in</p>
+            <p>Phone: +91 98765 43210</p>
+            <p>Hours: Mon–Sat, 9AM–9PM</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pain Relief | MedZone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../Styles/pages.css" />
+</head>
+
+<body>
+    <div class="container-fluid px-3">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 mb-4">
+            <div class="container-fluid px-0">
+                <a class="navbar-brand fw-bold" href="#">Sai Medicals</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Search Bar -->
+                    <form class="d-flex me-auto ms-lg-3 my-2 my-lg-0 w-50">
+                        <input class="form-control me-2" type="search" placeholder="Search medicines..."
+                            aria-label="Search" />
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="../../index.html">Home</a></li>
+
+                        <!-- Categories Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pain-relief.html">Pain Relief</a></li>
+                                <li><a class="dropdown-item" href="./caugh-caugh.html">Cough & Cold</a></li>
+                                <li><a class="dropdown-item" href="./vitamines.html">Vitamins</a></li>
+                                <li><a class="dropdown-item" href="./personal-care.html">Personal Care</a></li>
+                                <li><a class="dropdown-item" href="./child-care.html">Child Care</a></li>
+                                <li><a class="dropdown-item" href="./first-ade.html">First Aid</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+
+                        <!-- Upload Prescription -->
+                        <li class="nav-item">
+                            <a class="nav-link text-primary fw-semibold" href="#" data-bs-toggle="modal"
+                                data-bs-target="#uploadModal">
+                                Upload Prescription
+                            </a>
+                        </li>
+
+                        <!-- Login/Register -->
+                        <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+
+                        <!--Cart Icon -->
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="#">
+                                <i class="bi bi-cart"></i>
+                                Cart
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    2
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Pain Relief Showcase -->
+        <section id="top-products" class="pain-relief-page py-5">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Pain Relief Medicines</h2>
+                <p class="lead text-muted">Fast and effective solutions for fever, muscle aches, and joint pain.</p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                <!-- Product Cards -->
+                <!-- Dolo 650 -->
+                <div class="col">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img src="https://images.apollo247.in/pub/media/catalog/product/d/o/dol0026_1-.jpg"
+                            class="card-img-top" alt="Dolo 650">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title fw-semibold">Dolo 650</h5>
+                            <p class="card-text">Paracetamol for quick relief from fever & headache.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">₹25 / strip</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brufen -->
+                <div class="col">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img src="https://m.media-amazon.com/images/I/71HiQlXElCL.jpg" class="card-img-top"
+                            alt="Brufen">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title fw-semibold">Brufen</h5>
+                            <p class="card-text">Ibuprofen for pain and inflammation relief.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">₹35 / strip</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Voveran -->
+                <div class="col">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img src="https://images.apollo247.in/pub/media/catalog/product/V/O/VOV0007_1_1.jpg"
+                            class="card-img-top" alt="Voveran">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title fw-semibold">Voveran</h5>
+                            <p class="card-text">Relieves joint pain and muscle stiffness.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">₹40 / strip</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Saridon -->
+                <div class="col">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img src="https://m.media-amazon.com/images/I/711NuU+tsvL.jpg" class="card-img-top"
+                            alt="Saridon">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title fw-semibold">Saridon</h5>
+                            <p class="card-text">Headache relief with paracetamol and caffeine.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">₹22 / strip</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Volini Gel -->
+                <div class="col">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img src="https://cdn01.pharmeasy.in/dam/products_otc/183150/volini-pain-relief-gel-tube-of-30-g-6.1-1712725915.jpg"
+                            class="card-img-top" alt="Volini Gel">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title fw-semibold">Volini Pain Gel</h5>
+                            <p class="card-text">Spray-on gel for sprains and soreness.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">₹85 / tube</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Crocin Advance -->
+                <div class="col">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img src="https://images.apollo247.in/pub/media/catalog/product/C/R/CRO0091_1.jpg"
+                            class="card-img-top" alt="Crocin Advance">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title fw-semibold">Crocin Advance</h5>
+                            <p class="card-text">Mild fever & pain relief with paracetamol.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">₹28 / strip</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white pt-4 pb-3 mt-5" id="footer">
+            <div class="container">
+                <div class="row text-center text-md-start">
+                    <div class="col-12 col-md-4 mb-3">
+                        <h5 class="fw-bold">MedZone</h5>
+                        <p>Your trusted platform for reliable medicines and wellness essentials.</p>
+                    </div>
+                    <div class="col-6 col-md-4 mb-3">
+                        <h6 class="fw-semibold">Quick Links</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Shop</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">About</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 mb-3">
+                        <h6 class="fw-semibold">Get in Touch</h6>
+                        <p>Email: support@medzone.in</p>
+                        <p>Phone: +91 98765 43210</p>
+                        <p>Hours: Mon–Sat, 9AM–9PM</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
