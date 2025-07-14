@@ -1,0 +1,108 @@
+/* Reset */
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 10;
+}
+
+/* Section Intro */
+.pain-relief-page h2 {
+  font-size: 3.5vh;
+  color: #333;
+  margin-top: 3%;
+}
+
+.pain-relief-page .lead {
+  font-size: 2vh;
+  color: #666;
+  margin-bottom: 4vh;
+}
+
+/* Product Cards */
+.product-card {
+  border-radius: 1.5vw;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  box-shadow: 0 1vh 2vh rgba(0,0,0,0.1);
+  transform: translateY(-0.5vh);
+}
+
+.product-card .card-img-top {
+  height: 24vh;
+  object-fit: cover;
+  border-top-left-radius: 1.5vw;
+  border-top-right-radius: 1.5vw;
+}
+
+.product-card .card-title {
+  font-size: 2.5vh;
+  font-weight: 600;
+  margin-bottom: 1vh;
+}
+
+.product-card .card-text {
+  font-size: 2vh;
+  color: #555;
+  margin-bottom: 2vh;
+}
+
+/* Buy Button */
+.product-card .btn-outline-primary {
+  font-size: 1.8vh;
+  padding: 1vh 2vw;
+  border-radius: 2vw;
+}
+
+/* Footer */
+footer {
+  background-color: #212529;
+  color: #ffffff;
+  width: 100%;
+  padding: 4vh 0;
+  font-size: 1.8vh;
+}
+
+footer h5, footer h6 {
+  font-size: 2.2vh;
+  margin-bottom: 1.5vh;
+  color: #ffffff;
+}
+
+footer p, footer ul li {
+  margin: 0.5vh 0;
+  color: #cccccc;
+}
+
+footer a {
+  text-decoration: none;
+  color: #cccccc;
+  transition: color 0.2s ease-in-out;
+}
+
+footer a:hover {
+  color: #0d6efd;
+}
+
+footer hr {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+footer .small {
+  font-size: 1.6vh;
+  color: #aaaaaa;
+}
