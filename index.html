@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medicine Showcase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/Styles/index.css">
+</head>
+
+<body>
+    <div class="container-fluid px-3">
+
+        <!-- Navbar -->
+       <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 mb-4">
+            <div class="container-fluid px-0">
+                <a class="navbar-brand fw-bold" href="#">Sai Medicals</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Search Bar -->
+                    <form class="d-flex me-auto ms-lg-3 my-2 my-lg-0 w-50">
+                        <input class="form-control me-2" type="search" placeholder="Search medicines..."
+                            aria-label="Search" />
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+
+                        <!-- Categories Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./src/pages/pain-relief.html">Pain Relief</a></li>
+                                <li><a class="dropdown-item" href="./src/pages/caugh-caugh.html">Cough & Cold</a></li>
+                                <li><a class="dropdown-item" href="./src/pages/vitamines.html">Vitamins</a></li>
+                                <li><a class="dropdown-item" href="./src/pages/personal-care.html">Personal Care</a></li>
+                                <li><a class="dropdown-item" href="./src/pages/child-care.html">Child Care</a></li>
+                                <li><a class="dropdown-item" href="./src/pages/first-ade.html">First Aid</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+
+                        <!-- Upload Prescription -->
+                        <li class="nav-item">
+                            <a class="nav-link text-primary fw-semibold" href="#" data-bs-toggle="modal"
+                                data-bs-target="#uploadModal">
+                                Upload Prescription
+                            </a>
+                        </li>
+
+                        <!-- Login/Register -->
+                        <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+
+                        <!--Cart Icon -->
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="#">
+                                <i class="bi bi-cart"></i>
+                                Cart
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    2
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Carousel -->
+        <section id="home">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    <div id="dualCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <img src="https://img-cdn.publive.online/fit-in/1200x675/filters:format(webp)/afaqs/media/post_attachments/787b5d7de603f359f5dc285dd401ab5b811558ed29f61ae2222edc26aaf8cfe5.png"
+                                            class="img-fluid rounded" alt="Medicine 1">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="https://pbs.twimg.com/media/EZ1MgQvXgAAyBAM.jpg"
+                                            class="img-fluid rounded" alt="Medicine 2">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <img src="https://static.theprint.in/wp-content/uploads/2022/12/Vicks-india-Brandma.jpg"
+                                            class="img-fluid rounded" alt="Medicine 3">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHB9rxpZ9Bwdz70pB0EY90mGCVVCXSrLvmFl19tTHwiBmvk_URdy1FkBU9kn2pPFN-GKw&usqp=CAU"
+                                            class="img-fluid h-100 rounded" alt="Medicine 4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#dualCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#dualCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="categories mb-5">
+            <div class="row mb-3">
+                <div class="col-12 text-center fw-bold fs-3">Shop by Categories</div>
+            </div>
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <a href="./src/pages/pain-relief.html" class="category-card">
+                        <div class="category-card-img-cont">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTh-HBqPuWcK_ShHFAt2vUo8cGWcmxHB2GQ&s"
+                                alt="Pain Relief">
+                        </div>
+                        <div class="category-card-text">Pain Relief</div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <a href="./src/pages/caugh-caugh.html" class="category-card">
+                        <div class="category-card-img-cont">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-gaXPadnTlW_H2qvTFXShbnNA5_LS25i5FQ&s"
+                                alt="Cough & Cold">
+                        </div>
+                        <div class="category-card-text">Cough & Cold</div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <a href="./src/pages/vitamines.html" class="category-card">
+                        <div class="category-card-img-cont">
+                            <img src="https://www.rebuildyourvision.com/wp-content/uploads/2014/12/How-Often-Should-You-Take-Vitamin-Supplements.jpg"
+                                alt="Supplements">
+                        </div>
+                        <div class="category-card-text">Vitamins & Supplements</div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <a href="./src/pages/first-ade.html" class="category-card">
+                        <div class="category-card-img-cont">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1QxbdHH4zhZivSkG-FVpR6OJJ-rdPiG3Sqw&s"
+                                alt="First Aid">
+                        </div>
+                        <div class="category-card-text">First Aid Essentials</div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <a href="./src/pages/personal-care.html" class="category-card">
+                        <div class="category-card-img-cont">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqJYWxfnHi_8UM4jQGEYrSFyfSTOjq8LU0hw&s"
+                                alt="Personal Care">
+                        </div>
+                        <div class="category-card-text">Personal Care</div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <a href="./src/pages/child-care.html" class="category-card">
+                        <div class="category-card-img-cont">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh7Pn2g6Er2lLfLSZkV_l73a2y29mIlYdL6A&s"
+                                alt="Child Care">
+                        </div>
+                        <div class="category-card-text">Child & Infant Care</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top-Selling Products Grid -->
+        <section class="mb-5" id="top-products">
+            <div class="row mb-3">
+                <div class="col-12 text-center fw-bold fs-3">Top-Selling Medicines</div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                <!-- 1. Dolo 650 -->
+                <div class="col">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="https://images.apollo247.in/pub/media/catalog/product/d/o/dol0026_1-.jpg"
+                            class="card-img-top" alt="Dolo 650">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title fw-semibold">Dolo 650</h5>
+                            <p class="card-text">Fast relief from fever and body aches.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">₹25 / strip</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Brufen -->
+                <div class="col">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="https://m.media-amazon.com/images/I/81BGSPSHsEL.jpg" class="card-img-top"
+                            alt="Brufen">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title fw-semibold">Brufen</h5>
+                            <p class="card-text">Ibuprofen for pain and inflammation relief.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">₹35 / strip</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Voveran -->
+                <div class="col">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="https://images.apollo247.in/pub/media/catalog/product/V/O/VOV0007_1_1.jpg"
+                            class="card-img-top" alt="Voveran">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title fw-semibold">Voveran</h5>
+                            <p class="card-text">Effective relief for joint and muscle pain.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">₹40 / strip</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Benadryl -->
+                <div class="col">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="https://images.ctfassets.net/t975yazu1avh/5XV5yzc3WvPyqndcUGpGQE/52151809595af1a49b3c73a081e0d61a/BEN_300450235244_US_Allergy_Extra_Strength_Tablets_24CT_00000_Original-file.webp"
+                            class="card-img-top" alt="Benadryl">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title fw-semibold">Benadryl Syrup</h5>
+                            <p class="card-text">Soothes dry cough and throat irritation.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">₹85 / bottle</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Sinarest -->
+                <div class="col">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="https://static.meds.cvpharmacy.in/wp-content/uploads/2024/06/1405_ee07c106-061e-4e3c-9649-53e71419ac42_ee07c106-061e-4e3c-9649-53e71419ac42-1.jpg"
+                            class="card-img-top" alt="Sinarest">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title fw-semibold">Sinarest</h5>
+                            <p class="card-text">Relieves cold symptoms & nasal congestion.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">₹40 / strip</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Ascoril D Syrup -->
+                <div class="col">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="https://images.apollo247.in/pub/media/catalog/product/A/S/ASC0007_1_1.jpg"
+                            class="card-img-top" alt="Ascoril D">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title fw-semibold">Ascoril D Syrup</h5>
+                            <p class="card-text">Cough suppressant with decongestant formula.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">₹95 / bottle</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Revital H -->
+                <div class="col">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="https://m.media-amazon.com/images/I/61kuT-rqijL._UF1000,1000_QL80_.jpg"
+                            class="card-img-top" alt="Revital H">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title fw-semibold">Revital H</h5>
+                            <p class="card-text">Multivitamin + ginseng for daily energy.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">₹210 / pack</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Supradyn -->
+                <div class="col">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="https://static.meds.cvpharmacy.in/wp-content/uploads/2024/06/1460_b84bc140-c779-4942-b062-90603f13e226_b84bc140-c779-4942-b062-90603f13e226-1.jpg"
+                            class="card-img-top" alt="Supradyn">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title fw-semibold">Supradyn</h5>
+                            <p class="card-text">Power-packed vitamins + minerals for energy.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">₹90 / strip</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Shelcal 500 -->
+                <div class="col">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTREKosuxFCGPs3W689cucBb2KjASlutk1U6w&s"
+                            class="card-img-top" alt="Shelcal 500">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title fw-semibold">Shelcal 500</h5>
+                            <p class="card-text">Calcium + Vitamin D3 for strong bones.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">₹130 / strip</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 10. Savlon Antiseptic -->
+                <div class="col">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLp7dZbrBaFA3hlucrod2ylb7TE8nHCzJHew&s"
+                            class="card-img-top" alt="Savlon">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title fw-semibold">Savlon Liquid</h5>
+                            <p class="card-text">Powerful disinfectant for cuts and wounds.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">₹75 / bottle</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. Volini Gel -->
+                <div class="col">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5pUvlMRUSPOGj0DSvWf2FWsN5ZLA2i6qPKQ&s"
+                            class="card-img-top" alt="Volini Gel">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title fw-semibold">Volini Pain Relief Gel</h5>
+                            <p class="card-text">Fast-acting gel for sprains and stiffness.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">₹85 / tube</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. Colicaid Drops -->
+                <div class="col">
+                    <div class="card product-card shadow-sm h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCmpzexp07AB6GZ0M6eREW2oUizGiojzL5BA&s"
+                            class="card-img-top" alt="Colicaid Drops">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title fw-semibold">Colicaid Drops</h5>
+                            <p class="card-text">Gentle relief from infant colic and gas.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold text-success">₹65 / bottle</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <footer class="bg-dark text-white pt-4 pb-3" id="footer">
+            <div class="container">
+                <div class="row text-center text-md-start">
+
+                    <!-- Branding -->
+                    <div class="col-12 col-md-4 mb-3">
+                        <h5 class="fw-bold">Sai Medicals</h5>
+                        <p>Your trusted platform for reliable medicines and wellness essentials.</p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-6 col-md-4 mb-3">
+                        <h6 class="fw-semibold">Quick Links</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Shop</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">About</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-6 col-md-4 mb-3">
+                        <h6 class="fw-semibold">Get in Touch</h6>
+                        <p>Email: support@saimedicals.in</p>
+                        <p>Phone: +91 98765 43210</p>
+                        <p>Hours: Mon–Sat, 9AM–9PM</p>
+                    </div>
+                </div>
+
+                <hr class="border-light my-3" />
+
+                <!-- Footer Bottom -->
+                <div class="text-center small">
+                    &copy; 2025 Sai Medicals. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
