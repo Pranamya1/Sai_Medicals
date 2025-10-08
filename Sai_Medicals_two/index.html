@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Medicals -- Trusted Pharmacy</title>
+    <!-- external stylesheet -->
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- main-container -->
+    <!-- nav top -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary top-nav" style="background-color: #e3f2fd;"
+        data-bs-theme="light">
+        <div class="container-fluid">
+            <li class="nav-item dropdown navbar-brand ">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img class="nav-top-flag"
+                        src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
+                        alt="">
+                    India
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">another location</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            <a class="navbar-brand top-navbar-brand" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-phone-call-icon lucide-phone-call">
+                    <path d="M13 2a9 9 0 0 1 9 9" />
+                    <path d="M13 6a5 5 0 0 1 5 5" />
+                    <path
+                        d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                </svg>
+                +91 12345 67890
+            </a>
+        </div>
+    </nav>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand" href="#">
+                    <img src="./src/images/saiMedical-favicon.webp" alt="" class="nav-shop-logo">
+                    Sai Medicals
+                </a>
+            </div>
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 flex-row">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Upload Prescription</a>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Categories</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Pain Relief</a></li>
+                            <li><a class="dropdown-item" href="#">Cough & Cold</a></li>
+                            <li><a class="dropdown-item" href="#">Vitamins</a></li>
+                            <li><a class="dropdown-item" href="#">Personal Care</a></li>
+                            <li><a class="dropdown-item" href="#">Child Care</a></li>
+                            <li><a class="dropdown-item" href="#">First Aid</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search Medicines"
+                                aria-label="Search" />
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-user-icon lucide-user">
+                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                            Sign Up
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <div class="hero-sec">
+        <div class="row">
+            <div class="hero-one">
+                <div class="hero-one-text">
+                    <h5>Medicines</h5>
+                    <h1>All Medicines at Generic Offer</h1>
+                    <br>
+                    <a href="#" class="hero-one-shop_now">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- categories section -->
+    <div class="category-sec py-5">
+        <div class="container">
+            <div class="category-heading mb-4">
+                <h3 class="text-white text-center">Popular Categories</h3>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                    <div class="category-column category-card ">
+                        <div class="category-card-img">
+                            <img src="./src/images/category-card-images/moov-spray.png" alt="">
+                        </div>
+                        <div class="category-card-title">
+                            <h3>Pain Relaif</h3>
+                            <p>6 Products</p>
+                            <a href="#" class="category-card-btn">View Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                    <div class="category-column category-card ">
+                        <div class="category-card-img">
+                            <img src="./src/images/category-card-images/cold.jpeg" alt="">
+                        </div>
+                        <div class="category-card-title">
+                            <h3>Cold & Cough</h3>
+                            <p>6 Products</p>
+                            <a href="#" class="category-card-btn">View Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                    <div class="category-column category-card ">
+                        <div class="category-card-img">
+                            <img src="./src/images/category-card-images/vitamines.jpg" alt="">
+                        </div>
+                        <div class="category-card-title">
+                            <h3>Vitamines</h3>
+                            <p>6 Products</p>
+                            <a href="#" class="category-card-btn">View Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                    <div class="category-column category-card ">
+                        <div class="category-card-img">
+                            <img src="./src/images/category-card-images/personal-care.jpeg" alt="">
+                        </div>
+                        <div class="category-card-title">
+                            <h3>Personal Care</h3>
+                            <p>6 Products</p>
+                            <a href="#" class="category-card-btn">View Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                    <div class="category-column category-card ">
+                        <div class="category-card-img">
+                            <img src="./src/images/category-card-images/child-care.jpeg" alt="">
+                        </div>
+                        <div class="category-card-title">
+                            <h3>Child Care</h3>
+                            <p>6 Products</p>
+                            <a href="#" class="category-card-btn">View Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                    <div class="category-column category-card ">
+                        <div class="category-card-img">
+                            <img src="./src/images/category-card-images/first-aid.jpeg" alt="">
+                        </div>
+                        <div class="category-card-title">
+                            <h3>First Aid</h3>
+                            <p>6 Products</p>
+                            <a href="#" class="category-card-btn">View Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- top selling products -->
+    <div class="top-selling">
+        <div class="top-selling-heading">   </div>
+    </div>
+
+
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
